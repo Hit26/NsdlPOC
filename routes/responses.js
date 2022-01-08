@@ -6,7 +6,7 @@ const Response = require('../models/response');
 router.post('/',(req,res)=>{
 
     xml = new Response({
-        error:req.body.error,
+        error: req.body.error,
         code : req.body.code,
         info : req.body.info
     });
