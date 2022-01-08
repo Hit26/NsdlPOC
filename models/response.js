@@ -2,9 +2,14 @@ const mongoose = require('mongoose');
 
 // Response Schema
 const ResponseSchema = new mongoose.Schema({
-    response:{
-        type:String,
-        required:true
+    error:{
+        type:Number
+    },
+    code:{
+        type:Number
+    },
+    info:{
+        type:String
     }
 });
 
