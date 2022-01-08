@@ -16,7 +16,7 @@ app.use(express.urlencoded({extended:true}));
 app.use('/api/responses',respRoutes);
 
 //connect to mongodb atlas
-mongoose.connect(process.env.MONGO_URL,{useNewUrlParser:true}).then(()=>{
+mongoose.connect("mongodb+srv://Hiteshj2612:Hitesh2612@cluster0.5mdsu.mongodb.net/xmldb?retryWrites=true&w=majority",{useNewUrlParser:true}).then(()=>{
     console.log("Connected to database");
 }).catch(error=>{
     console.log("Something went wrong!!!");
